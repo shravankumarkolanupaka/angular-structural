@@ -1,0 +1,10 @@
+{{name}}
+<button (click)="fun()">click</button>
+
+<div *ngFor="let tech of technlogies">
+  <div *ngIf="tech.status">
+    <h1>{{tech.name}}</h1>
+    <p>{{tech.desc}}<p>
+    <hr/>
+  </div>
+</div>
