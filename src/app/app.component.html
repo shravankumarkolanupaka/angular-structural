@@ -1,4 +1,15 @@
-{{name}}
+
+<h1 [style.color]="'red'">{{name}}</h1>
+<h1 [style.color]="randomcolor">{{name}}</h1>
+<button (click)="setColor()">Change color</button>
+<hr>
+<h1 [ngStyle]="{'color':'green', 'font-size':'17px','background-color':getRandomColor()}">{{name}}</h1>
+<hr>
+<h1 [className]="'a'">{{name}}</h1>
+<hr>
+<h1 [ngClass]="{'a': true, 'b': false}">{{name}}</h1>
+<hr>
+<h1 [class.a]="false">{{name}}</h1>
 <button (click)="fun()">click</button>
 
 <div *ngFor="let tech of technlogies">
@@ -8,3 +19,6 @@
   ..  <hr/>
   </div>
 </div>
+
+
+
